@@ -108,7 +108,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 4rem;
+  min-height: 6rem;
 }
 
 .logo {
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .logo-img {
-  height: 60px;
+  height: 95px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -131,7 +131,7 @@ a:hover {
 
 .logo-text {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--color-primario);
   letter-spacing: 0.02em;
 }
@@ -517,7 +517,7 @@ a:hover {
 /* Escritorio grande: 4 columnas */
 @media (min-width: 1200px) {
   .servicios-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -692,4 +692,36 @@ a:hover {
 
 .footer a:hover {
   color: var(--color-blanco);
+}
+
+/* ============================================
+   Botón flotante WhatsApp
+   ============================================ */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.5);
+  z-index: 150;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  color: white;
+}
+
+.whatsapp-float:active {
+  transform: scale(0.98);
 }
